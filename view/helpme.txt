@@ -1,0 +1,41 @@
+switch (vehicleType) {
+            case "sedan":
+                Sedan sedan = (Sedan) car;
+
+                break;
+            case "suv":
+                SUV suv = (SUV) car;
+                break;
+            case "truck":
+                Truck truck = (Truck) car;
+                break;
+            case "van":
+                Van van = (Van) car;
+                break;
+            default:
+                break;
+        }
+
+        if (vehicle_type == "truck") {
+            System.out.println(
+                    "Brand: " + brandTextField.getText() + " " + weightField.getText() + " " + tiresField.getText());
+
+        } else if (vehicle_type == "sedan") {
+            System.out.println(
+                    "Brand: " + brandTextField.getText() + " " + engineTextField.getText() + " "
+                            + seatsTextField.getText());
+
+        } else if (vehicle_type == "suv") {
+            System.out.println(
+                    "Brand: " + brandTextField.getText() + " " + weightField.getText() + " "
+                            + (String) colorComboBox.getSelectedItem());
+        } else {
+            System.out.println(
+                    "Brand: " + brandTextField.getText() + " " + seatsTextField.getText() + " "
+                            + (String) fuelTypeBox.getSelectedItem());
+        }
+
+Note :
+delete car offered by dealer when delete dealer        
+
+jdbc:mysql://localhost:3306/?
